@@ -1,0 +1,16 @@
+div {
+    background-color: blue;
+    margin: 10px 0;
+    visibility: visible;
+}
+
+.first {
+    display: none;
+                /* hide the element and will remove his place*/
+
+    visibility: hidden;
+                /* hide the element and willn’t remove his place*/
+
+
+}
+

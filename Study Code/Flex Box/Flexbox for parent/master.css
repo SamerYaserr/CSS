@@ -1,0 +1,94 @@
+/*
+Flexible Box
+For Parent
+    - display: flex => To Start Flexible Box
+
+    - flex-direction:
+        --specifies the direction of the flexible items.
+        --row => Default Value
+
+    - flex-wrap: 
+        --specifies whether the flexible items should wrap or not.
+        --nowrap => Default Value
+
+    - flex-flow: [Flex-Direction] + [Flex-Wrap]
+
+    - justify-content: 
+        --aligns the flexible container's items when the items do not use all available space on the main-axis (horizontally).
+        --flex-start => Default Value
+        --space-between => Items will have space between them
+        --space-around => Items will have space before, between, and after them.
+        --space-evenly => Items will have equal space around them.
+
+    - align-items: 
+        -- property to align the items vertically.
+        -- stretch => Default Value
+        -- stretch => Items are stretched to fit the container	
+        -- center =>	Items are positioned at the center of the container	
+        -- flex-start => Items are positioned at the beginning of the container	
+        -- flex-end => Items are positioned at the end of the container
+
+    -align-content:
+        -- to align the items on the main axis (horizontally).
+        -- stretch => Default Value
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.flex {
+    background-color: #eee;
+    width: 600px;
+    height: 400px;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.flex div {
+    background-color: #f00;
+    color: white;
+    width: calc( 100% / 3 );
+    text-align: center;
+    padding: 20px;
+}
+
+.float {
+    overflow: hidden;
+    background-color: #eee;
+    width: 600px;
+    padding: 20px;
+    margin: 20px auto;
+}
+
+.float div {
+    background-color: #f00;
+    color: white;
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+    padding: 20px;
+}
+
+/* .flex .one,
+.float .one {
+    height: 80px;
+} */
+
+.center {
+    background-color: blue;
+    color: white;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

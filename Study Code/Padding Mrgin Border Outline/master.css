@@ -1,0 +1,65 @@
+div {
+    background-color: #DDD;
+    padding: 20px 60px;
+                    /* Top Right Bottom Left */
+                    /* if we write one value all will be same that value like:
+                    - 20px = 20px 20px 20px 20px*/
+                    /*otherwise if we didn,t write a value it will take the value of it’s opposite
+                    - 20px 30px = 20px 30px 20px 30px*/
+
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+
+    /* padding take pixel or percentage value. */
+}
+
+div {
+    margin: 30px 40px;
+    /* margin is as like as padding but margin take negative value,too */
+
+    width: 70%;
+    margin-left: 15%;
+
+    margin-left: auto;
+    margin-right: auto;
+                    /*auto :divide the rest in them equally*/
+}
+
+div {
+
+    background-color: #DDD;
+    padding: 10px;
+    width: 70%;
+    margin: auto;
+    border-width: 10px;
+    border-color: red  black white green;
+    border-style: solid;
+
+    border: 10px red solid;
+                        /*short hand*/
+
+
+    /* 
+    any proberty in border can take 4 value
+    top - right - bottom - left
+    */
+
+}
+
+div {
+    background-color: #DDD;
+    padding: 10px;
+    width: 300px;
+    border: 10px red solid;
+
+    outline: 10px blue solid;
+                    /* 
+                    outline is a border for the element but out side it 
+                    we can’t give a specific value for every part separately like border -> border-left
+                    know it only don’t use it :)
+                    */
+
+}
+

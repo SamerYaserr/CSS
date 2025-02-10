@@ -1,0 +1,203 @@
+/*
+Pseudo Classes
+    -used to define a special state of an element.
+
+*/
+
+.one {
+    background-color: red;
+    color: white;
+}
+
+.two {
+    background-color: #eee;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.ch:checked + label {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+div:empty {
+    border: 5px solid yellow;
+}
+
+.in {
+    border: 5px solid black;
+}
+
+.in:focus {
+    border-color: red;
+    outline: none;
+}
+
+/*
+Pseudo Elements
+    -used to style specified parts of an element.
+*/
+
+.onee span {
+    display: inline-block;
+    background-color: red;
+    color: #eee;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.twoo::first-letter {
+    display: inline-block;
+    background-color: red;
+    color: #eee;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.threee::first-line {
+    color: green;
+    font-weight: bold;
+}
+
+.fourr::selection {
+    color: yellow;
+    background-color: black;
+}
+
+
+/*
+Pseudo Elements (Part2):
+*/
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.uone {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+.user {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+.uone::after {
+    content: "";
+    position: absolute;
+    width:5px;
+    height: 100%;
+    right: -10px;
+    top: 0;
+    background-color: rgb(12, 212, 155);
+}
+
+.uone::before {
+    content: "";
+    width: 0;
+    height:0;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent black transparent transparent ;
+}
+
+
+/*
+Pseudo Elements (Part3):
+*/
+
+.parent {
+    margin-bottom: 20px;
+    overflow: hidden;
+    counter-increment: members-counter;
+}
+
+.uonee {
+    background-color: #eee;
+    padding: 10px;
+    width: 600px;
+    float: left;
+    position: relative;
+}
+
+.uonee::before {
+    content: attr(data-text);
+    display: none;
+}
+
+.uonee:hover::before {
+    display: block;
+}
+
+.uonee::after {
+    content: counter(members-counter);
+    position: absolute;
+    background-color: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    right: -10px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.userr {
+    background-color: #eee;
+    width: 50px;
+    margin-right: 20px;
+    padding: 10px;
+    height: 55.5px;
+    float: left;
+    font-size: 50px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #009688 transparent transparent;
+}

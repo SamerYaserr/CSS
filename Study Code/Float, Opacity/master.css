@@ -1,0 +1,63 @@
+.parent {
+    background-color: red;
+    padding: 10px;
+    /* overflow: hidden; */
+}
+
+.parent div {
+    text-align: center;
+    background-color: #eee;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 25%;
+    float: left;
+}
+
+.clear {
+    clear: left; /*To solve the problem of the float*/
+}
+
+
+/*
+    Content Width Is: 100%
+    5 Spaces  1% * 5 => 5% From Content Width
+    100% - 5%  = 95% Available Space
+    4 Elements The Width Is: 95% / 4
+*/
+
+.p1, .p2, .p3, .p4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: calc(95% / 4);
+    margin-left: 1%;
+}
+
+/*
+    Content Width Is: 100%
+    6 Spaces  10px * 6 => 60px From Content Width
+    100% - 60px Available Space
+    5 Elements The Width Is: (100% - 60px) / 5
+*/
+
+.p1, .p2, .p3, .p4, .p5 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-color: #eee;
+    float: left;
+    width: calc((100% - 60px) / 5);
+    margin-left: 10px;
+}
+
+
+.one {
+    background-color: red;
+    opacity: 0.7;/* Opacity for the all element (the text ant the color)*/
+}
+
+.two {
+    background-color: rgb(255 0 0 / 0.1)/* Opacity for only the color*/
+}

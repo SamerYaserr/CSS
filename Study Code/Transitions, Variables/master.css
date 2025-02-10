@@ -1,0 +1,143 @@
+/*
+Transition:-
+    -Duration:
+            --sets the length of time a transition animation should take to complete.
+            --default is 0s.
+    -Property:
+            --sets the CSS properties to which a transition effect should be applied.
+            --default is all. 
+    -Delay:
+            --specifies the duration to wait before starting a property's transition effect when its value changes.
+            --default is 0s.
+    -Timing Function:
+            --sets how intermediate values are calculated for CSS properties being affected by a transition effect.
+            --default is ease.
+*/
+
+.one {
+    background-color: #EEE;
+    width: 200px;
+    height: 100px;
+
+    transition-duration: 0.5s; 
+    transition-delay: 0.2s;
+    transition-property: width;
+    transition-timing-function: linear;
+
+    transition: width 3s, height 2s;
+
+    transition: all 2s 0.5s linear; 
+}
+
+.one:hover {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 280px;
+    height: 120px;
+}
+
+/*
+The !important Declaration :
+        --used to add more importance to a property/value than normal.
+        -- if you use the !important rule, it will override ALL previous styling rules for that specific property on that element!
+*/
+
+.onee {
+    margin: 20px;
+    background-color: #EEE !important;
+}
+
+/*
+The Margin Collapse:
+    [1] Only Vertical Margin Collapse.
+    [2] Bigger Margin Wins.
+    [3] Margin Collapsing With Elements Without Anything Between them.
+    [4] Nesting Does Not Prevent Collapse
+*/
+
+.parent {
+    overflow: hidden;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.parent .oneee,
+.parent .twooo {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+.oneee {
+    background-color: #ddd;
+}
+
+.twooo {
+    background-color: #aaa;
+} 
+
+.up {
+    background-color: red;
+    color: white;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+.down {
+    background-color: green;
+    color: white;
+    height: 80px;
+    margin-top: 20px;
+}
+
+/*
+CSS Variables
+    - Global Variable => in root
+    - Local Variable
+    var(Variable Name, Fall Back Value)
+*/
+
+:root {
+    --mainColor: blue;
+    --mainPadding: 10px;
+}
+
+.main {
+    background-color: var(--mainColor, black);
+    color: white;
+    padding: calc(20px + var(--mainPadding));
+}
+
+h2 {
+    color: var(--mainColor);
+    background-color: #eee;
+    padding: var(--mainPadding);
+}
+
+p {
+    color: var(--mainColor);
+    border: 2px solid var(--mainColor);
+    padding: var(--mainPadding);
+}
+
+a {
+    color: var(--mainColor);
+}
+
+a:hover {
+    color: black;
+}
+
+.local1 {
+    background-color: var(--mainColor);
+    color: white;
+}
+
+.local2 {
+    --mainColor: black;
+    background-color: var(--mainColor);
+    color: white;
+}

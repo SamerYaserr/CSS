@@ -1,0 +1,48 @@
+/*
+-width       => the width will not change. (default : fill width)
+-min-width   => the width will start with the value and can be changed by the width of the element.
+-max-width   => the width will end at the value and can be smaller by the width of the element.
+-fit-content => to fit the width with the content
+
+height     => the same as width. (default : auto )
+min-height => the same as min-width.
+max-height => the same as min-width.
+*/
+
+.c1 {
+    background-color: red;
+    padding: 10px;
+    display: inline-block;
+    min-width: 50px;
+    max-width: 300px;
+    min-height: 10px;
+}
+
+.c2 {
+    display: inline-block;
+    background-color: red;
+    padding: 10px;
+    width: fit-content;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*
+overflow:   -visible => the extra content will be visible but out side the element.
+            -hidden  => the extra content will be hidden.
+            -scroll  => the content will be visible as scroll.
+            -auto    => if there is an extra content it will be scroll otherwise not.
+
+overflow-x => control over content by x dirction
+overflow-y => control over content by x dirction
+
+*/
+
+.over {
+    width :150px;
+    height: 150px;
+    background-color: #eee;
+    margin: 20px auto;
+    border-radius: 6px;
+    overflow: auto;
+}

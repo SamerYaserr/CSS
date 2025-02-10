@@ -1,0 +1,41 @@
+div{
+background-color: green; /* Color Name */
+background-color: rgb(150 150 255 / 50%); /* Red Green Blue  / Alpha Channel */
+background-color: #0000FF; /* Color Hex Code -> Every two digit is a color (Red Green Blue) */
+background-image: url("Screenshot\ 2023-11-10\ 010954.png"); /* make the photo background */
+background-repeat: no-repeat; 
+                        /*
+                        repeat => repeat imge x and y (default)
+                        no-repeat => no repeat
+                        reapet-x => repeat x only
+                        repeat-y => repeat y only 
+                        */
+
+background-attachment: scroll; 
+                        /*
+                        scroll => image don’t move. (default)
+                        fixed  => image move with you.
+                        */
+
+background-position: left center;
+                        /* 
+                        -positions: (x,y)
+                        like :  - center top
+                                - right bottom
+
+                        -pixel (amount you wat to move from left in px , amount you wat to move from top in px) 
+                        like :- 100px 20px
+
+                        -precetage (The precntage you wat to move from left , the precentage you wat to move from top)
+                        like :- 25% 30%
+                        */
+
+background-size: contain;
+                        /*
+                        auto      => the original size
+                        cover     => image cover the content
+                        contain   => fully visible
+                        pixel     => (width , heidth)
+                        precetage => The precntage you want the width, The precntage you want the height)
+                        */
+}

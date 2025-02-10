@@ -1,0 +1,22 @@
+/* target all paragraps*/
+p {
+    color: red;
+    font-size: 40px;
+}
+
+/* target any element has class=classp*/
+.classP {
+    color: blue;
+    font-size: 40px;
+}
+
+/* target any element has id = idP*/
+#idP{
+    color: green;
+    font-size: 40px;
+}
+
+.user-test{
+    color: purple;
+    font-size: 40px;
+}

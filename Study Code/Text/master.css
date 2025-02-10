@@ -1,0 +1,72 @@
+/*
+Text color:
+    - background-color
+    - color
+
+
+Text Shadow
+    Syntax => text-shadow: H-shadow V-shadow Blur color.
+
+
+Text Alignment:
+    -Alignment: place of the text.
+    -Direction: direction of the text.
+    -vertical allignment: allignment of the text to photo.
+
+
+text-decoration: (place of line for rest).
+
+
+text-transform:
+    -capitalize => the first letter is capital.
+    -uppercase  => the all text are capital. 
+    -lowercase  => the all text are small.
+
+
+Text Spacing:
+    -letter-spacing: (the distance between letters).
+    -text-indent: (the space distance before text).
+    -line-height: (the ditance between sentences ).
+    -word-spcing: (the distance between words).
+    -white-space: (wrapping the text). Note:- this for the all thext
+    -word-break: break the word when overflow. Note:- This is for the word
+
+
+Text Overflow:
+    -text-overflow: put ellipsis instead of overflow text
+
+
+
+*/
+
+div {
+    background-color: #f9f9f9;
+    text-shadow: 1px 1px 0 red;    
+    text-align: center;
+    direction: ltr;
+}
+
+.ara {
+    color: green;
+    direction: rtl;
+}
+
+div .img {
+    vertical-align: middle;
+}
+
+.line {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.wel {
+    background-color: #ddd;
+    padding: 10px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+

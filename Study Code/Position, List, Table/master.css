@@ -1,0 +1,97 @@
+/*
+Positions
+    -Static => Default
+    -relative => move according for himself
+    -absolute => as he isn’t exsit (postion according for the parent)
+    -fixed => scroll (postion according for the Screen)
+    -Sticky => Stay in its postion. It will be fixed at the position i give when scrolling
+*/
+
+
+div {
+    color: white;
+    width: 100px;
+    padding: 10px;
+
+}
+
+.parent {
+    width:500px;
+    height: 500px;
+    background-color: blue;
+    position: relative;
+    top: 100px;
+}
+
+.one {
+    background-color: red;
+    position: static;
+    bottom: 0px;
+}
+
+.two {
+    background-color: green;
+    position: absolute;
+    top: 300px;
+    right: 300px;
+}
+
+
+/*
+z-index => specifies the stack order of an element.
+*/
+
+.one {
+    z-index: 100;
+}
+
+
+/*
+Lists Styling
+    -list-style-type => sets the marker of a list item element.
+    -list-style-position =>  property sets the position of the relative to a list item.
+    -list-style-image =>  property replaces the list-item marker with an image.
+
+*/
+
+
+li{
+    margin-bottom: 10px;
+    background-color: #EEE;
+}
+
+ul{
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/*
+Table styling
+    -border-spacing => property sets the distance between the borders of adjacent cells in a table. This property applies only when border-collapse is separate.
+
+*/
+
+table {
+    position: relative;
+    top: 150px;
+    border: 1px solid #656363;
+    width: 100%;
+    border-spacing: 7px;
+}
+
+table td {
+    padding: 15px;
+    background-color: #EEE;
+    border: 6px solid #656363;
+}
+
+table thead td {
+    background-color: rgb(26, 225, 222);
+    color: #EEE;
+    font-weight: bold;
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

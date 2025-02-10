@@ -1,0 +1,8 @@
+div{
+    font-size: 100px;
+    color: black;
+    text-shadow: red 0px 3px 3px,
+    blue 0px 6px 6px,
+    violet 0px 9px 9px;
+    text-align: center;
+}
