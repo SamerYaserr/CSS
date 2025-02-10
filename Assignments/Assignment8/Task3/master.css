@@ -1,0 +1,40 @@
+.parent{
+    width: 400px;
+    margin: 50px auto;
+    list-style: none;
+}
+
+.child1, .child2, .child3{
+    margin: 10px;
+    background-color: #EEE;
+    padding: 10px;
+}
+
+ul li ol li{
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.child2 ol{
+    list-style-type:upper-roman;
+}
+
+.child3 ul{
+    padding: 0px;
+}
+
+ul li ol{
+    padding-left: 25px;
+}
+
+
+.child3 ul li{
+    background-color: white;
+    margin: 5px;
+    margin-left: 0;
+    padding: 5px;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+

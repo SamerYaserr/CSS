@@ -1,0 +1,49 @@
+div{
+    width: 400px;
+    position: relative;
+    background-color: #eee;
+    border-top: rgb(255, 60, 0) 3px solid;
+    border-bottom: rgb(255, 60, 0) 3px solid;
+    border-left: rgb(22, 143, 249) 3px solid;
+    border-right: rgb(22, 143, 249) 3px solid;
+    margin: 100px auto;
+    padding: 20px 0;
+    text-align: center;
+    line-height: 30px;
+}
+
+span{
+    background-color: rgb(22, 143, 249);
+    position: absolute;
+    border: rgb(22, 143, 249) 3px solid;
+    padding: 1px 18px;
+    color: white;
+}
+
+.top-left{
+    position: absolute;
+    top: calc(-35px / 2);
+    left: calc(-35px / 2 - 6px);
+    border-right: rgb(255, 60, 0) 3px solid;;
+}
+
+.top-right{
+    position: absolute;
+    top: calc(-35px / 2);
+    right: calc(-35px / 2 - 6px);
+    border-left: rgb(255, 60, 0) 3px solid;;
+}
+
+.bottom-left{
+    position: absolute;
+    bottom: calc(-35px / 2);
+    left: calc(-35px / 2 - 6px);
+    border-right: rgb(255, 60, 0) 3px solid;;
+}
+
+.bottom-right{
+    position: absolute;
+    bottom: calc(-35px / 2);
+    right: calc(-35px / 2 - 6px);
+    border-left: rgb(255, 60, 0) 3px solid;;
+}

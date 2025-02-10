@@ -1,0 +1,40 @@
+body{
+    font-family: Arial;
+}
+
+div{
+    float: left;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin: 100px 20px;
+    counter-increment: cnt;
+    position: relative;
+    box-shadow: -6px -6px  #e91e63, 
+        6px 6px #2196f3;
+}
+
+div::before{
+    content: counter(cnt);
+    text-align: center;
+    color: white;
+    padding: 5px 10px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(-28.4px / 2);
+    left: 50%;
+    margin-left: calc(-28.9px / 2);
+}
+
+div::after{
+    content: "Element";
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-left: -50%;
+    margin-top: calc(-18.4px / 2);
+}

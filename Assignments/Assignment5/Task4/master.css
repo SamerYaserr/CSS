@@ -1,0 +1,14 @@
+a{
+    display: block;
+    width: fit-content;
+    border-bottom: rgb(18, 87, 70) 10px solid;
+    background-color: rgb(19, 121, 95);
+    color: white;
+    padding: 50px 100px;
+    margin: 40px auto;
+    font-size: 30px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+
+}

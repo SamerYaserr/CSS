@@ -1,0 +1,21 @@
+div{
+    width: 400px;
+    margin: 50px;
+    background-color: hsl(0, 3%, 87%);
+    padding: 20px;
+    outline: 10px hsl(0, 3%, 87%) solid;
+}
+
+.element-element-1{
+    border-left: 10px solid rgb(228, 16, 98)
+}
+
+.element-element-2{
+    visibility: hidden;
+}
+
+.element-element-3{
+    border-left: 10px solid rgb(11, 230, 161)
+}
+
+
