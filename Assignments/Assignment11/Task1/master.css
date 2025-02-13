@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --parentMargin: 50px;
+    --childMargin: 15px;
+}
+
+.parent {
+    width: 400px;
+    background-color: #f2f2f4;
+    height: 150px;
+    text-align: center;
+    padding: 20px 0;
+    margin: var(--parentMargin) auto;
+    transition-duration: 0.5s;
+}
+
+.child {
+    background-color: #dededc;
+    width: 300px;
+    margin: var(--childMargin) auto;
+    padding: 20px 0;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.parent:hover {
+    --parentMargin: 20px;
+    --childMargin: 30px;
+}
